@@ -1,0 +1,12 @@
+## Generated Story -1041240810564247050
+* greet
+    - export
+## Generated Story 7775441497954123192
+* greet
+    - utter_greet
+* inform{"location": "london"}
+    - slot{"location": "london"}
+    - action_weather
+    - slot{"location": "london"}
+* inform
+    - export

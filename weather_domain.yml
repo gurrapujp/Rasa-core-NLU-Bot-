@@ -1,0 +1,52 @@
+slots:
+  location:
+    type: text
+  empID:
+    type: unfeaturized
+  voterID:
+    type: text
+    
+intents:
+ - greet
+ - goodbye
+ - inform
+ - empinfo
+ - voterinfo
+
+entities:
+ - location
+ - general
+ - empID
+ - voterID
+ 
+templates:
+  utter_greet:
+    - 'Hello! How can I help?'
+    
+  utter_goodbye:
+    - 'Talk to you later.'
+    - 'Bye bye :('
+    
+  utter_ask_location:
+    - 'In what location?'
+    
+  utter_ask_employeeID:
+    - 'Do you want all the employee details'
+    - 'What is employee ID'
+    - 'What is 101 employee Details'
+    
+  utter_ask_voterID:
+    - 'Do you want all the voterinfo details'
+    - 'What is voterID'
+    - 'What is 101 voterID Details'    
+
+actions:
+ - utter_greet
+ - utter_goodbye
+ - utter_ask_location
+ - actions.ActionWeather
+ - utter_ask_employeeID
+ - utter_ask_voterID 
+ - actions.ActionEmployee
+ - actions.ActionVoter
+
